@@ -11,13 +11,15 @@ from pycoingecko import CoinGeckoAPI
 
 # =============================================================================
 # Setup:
-# Description:
-# A multi-agent AI investment advisor using Qwen, LangGraph, and Streamlit to provide personalized investment advice based on market data.
+# Description: Swarm Architecture
+# A multi-agent AI investment advisor using Ollama, Qwen, LangGraph, and Streamlit to provide personalized investment advice based on market data.
 # It uses the swarm architecture to manage multiple agents, where agents can handoff tasks to each other and collaborate to
 # provide the best investment advice.
 
 # ollama pull qwen3:8b
 # streamlit run multi_agent_investment_advisor.py
+# Sample Test Question for Stocks: How Apple is performing financially?
+# Sample Test Question for Crypto: Is Bitcoin a good investment?
 # =============================================================================
 
 model = ChatOllama(model="qwen3:8b", temperature=0.1)
